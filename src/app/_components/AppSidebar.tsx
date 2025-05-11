@@ -1,8 +1,10 @@
 'use client'
 
+
+import SearchInput from '../../components/Search'
 import { Button } from '@/components/ui/button'
-import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@/components/ui/sidebar'
-import { Compass, GalleryHorizontalEnd, LogIn, Search } from 'lucide-react'
+import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem, } from '@/components/ui/sidebar'
+import { Compass, GalleryHorizontalEnd, LogIn, Search} from 'lucide-react'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import React from 'react'
@@ -36,6 +38,7 @@ export default function AppSidebar() {
     <Sidebar>
       <SidebarHeader className='bg-accent flex items-center py-5'>
         <Image src='/logo.png' alt='logo' width={180} height={140} />
+        <SearchInput />
       </SidebarHeader>
         <SidebarContent className='bg-accent'>
           <SidebarGroup >
