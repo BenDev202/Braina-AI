@@ -48,11 +48,7 @@ Braina-AI is an intelligent developer assistant built to **boost productivity**,
    yarn install
    # or
    pnpm install
-Here's the corrected README.md with proper formatting:
 
-```markdown project="Braina-AI" file="README.md"
-...
-```
 
 2. **Install dependencies**
 
