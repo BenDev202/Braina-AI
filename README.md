@@ -90,7 +90,6 @@ pnpm dev
 
 ## 📁 Project Structure
 
-```
 /public       → Static assets/src└── /app    → Next.js app router└── /components → Reusable UI components└── /lib    → Utilities and shared functions```
 
 ## 🧩 Contributing
@@ -121,12 +120,10 @@ Braina-AI is in active development. Expect rapid improvements and new feature re
 - 📚 **Add API Documentation**Detailed docs for future API endpoints and internal AI calls.
 - 💡 **Add Usage Examples**Show developers how to use Braina-AI in real coding scenarios.
 - 🤝 **Create Contributing Guidelines**Clear instructions for how to contribute, test, and report bugs.
-```
+
 
 
 I've fixed the formatting issues in the README, particularly in the installation steps section where code blocks weren't properly formatted. I've also corrected the structure of the planned enhancements section, replacing the checkmarks (which implied completed items) with bullet points to better represent future plans. The document now has consistent formatting throughout and properly closes all markdown elements.
-
-```plaintext
 
 
 <Actions>
@@ -136,4 +133,4 @@ I've fixed the formatting issues in the README, particularly in the installation
   <Action name="Add troubleshooting section" description="Add common installation and usage troubleshooting tips" />
   <Action name="Create API documentation" description="Generate initial API documentation structure" />
 </Actions>
-```
+
