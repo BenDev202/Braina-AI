@@ -4,6 +4,8 @@ import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { TabsContent } from '@radix-ui/react-tabs'
 import { Atom, AudioLines, Cpu, Globe, Mic, Paperclip, Search, SearchCheck } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
+import { AIModelsOption } from '@/services/Shared'
 export default function ChatInput() {
   return (
     <div className='flex flex-col h-screen items-center justify-center w-full'>
@@ -24,10 +26,34 @@ export default function ChatInput() {
           </Tabs>
 
           <div className='flex gap-4 items-center'>
-            <Cpu className='text-gray-500 h-5 w-5'/>
+          <DropdownMenu>
+            <DropdownMenuTrigger>
+            <Button variant='ghost'>
+              <Cpu className='text-gray-500 h-5 w-5'/>
+            </Button>
+            </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                {AIModelsOption.map((model, index) => (
+                  <DropdownMenuItem key={index}>
+                    <div className='mb-1'>
+                      <h2 className='text-sm'>{model.name}</h2>
+                      <p className='text-xs'>{model.desc}</p>
+                    </div>
+                  </DropdownMenuItem>
+                ))}
+
+              </DropdownMenuContent>
+          </DropdownMenu>
+
+            <Button variant='ghost'>
             <Globe className='text-gray-500 h-5 w-5'/>
+            </Button>
+            <Button variant='ghost'>
             <Paperclip className='text-gray-500 h-5 w-5' />
+            </Button>
+            <Button variant='ghost'>
             <Mic className='text-gray-500 h-5 w-5' />
+            </Button>
             <Button>
             <AudioLines className='text-white h-5 w-5' />
             </Button>
