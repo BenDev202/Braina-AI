@@ -1,10 +1,5 @@
-import ChatInput from "./_components/ChatInput";
+import LoadingExperience from "./_components/LoadingExperience";
 
-
-export default function page() {
-  return (
-    <div className="w-full">
-      <ChatInput />
-    </div>
-  )
+export default function Page() {
+  return <LoadingExperience />;
 }
